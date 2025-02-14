@@ -4,7 +4,7 @@ from routes.meals import meals_bp
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "your_secret_key"
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = 'mysql+pymysql://root:root@127.0.0.1:3306/daily_diet'
 
 db.init_app(app)
 

@@ -14,7 +14,8 @@ def create_meal():
     name = data.get("name")
     description = data.get("description")
     date_time_str = data.get("date_time")
-    in_diet = data.get("in_diet")
+    in_diet = "sim" if data.get("in_diet") else "não"  # Converte True/False para "sim" ou "não"
+
 
     # Verifica se todos os campos estão presentes
     if not all([name, description, date_time_str, in_diet]):
