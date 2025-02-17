@@ -3,10 +3,10 @@ services:
     image: mysql:latest
     restart: always
     environment:
-      MYSQL_USER: 'admin'
-      MYSQL_PASSWORD: 'admin123'
-      MYSQL_DATABASE: 'daily-diet'
-      MYSQL_ROOT_PASSWORD: 'admin123'
+      MYSQL_USER: 'root'
+      MYSQL_PASSWORD: 'root'
+      MYSQL_DATABASE: 'daily_diet'
+      MYSQL_ROOT_PASSWORD: 'root'
     ports:
       - "3306:3306"
     expose:
